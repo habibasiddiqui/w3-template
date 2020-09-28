@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lato' sans-serif;
+    padding-top: 52px;
+}
+nav {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    /* height: 50px; */
+}
+.navbar {
+    background-color: black;
+    padding-top: 0px;
+    padding-bottom: 0px ;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+    padding: 14px 24px !important; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: black !important;
+    background-color: #ccc;
+}
+.fa-search {
+    color: whitesmoke;
+}
+.navbar-text {
+    padding:  7px 18px !important; 
+}
+
+.navbar-text:hover {
+    background-color: orangered;
+}
+.carousel h5{
+    font-size: 22px;
+    font-weight: normal;
+}
+.carousel p{
+    font-weight: 600;
+    
+}
+.section-head, .tour h3{
+    letter-spacing: 2px;
+}
+.section-subhead{
+    color: grey;
+}
+.tour{
+    background-color: black;
+}
+.tour h3 {
+    color: whitesmoke
+}
+.tour ul li {
+    color: grey !important;
+}
+
+.tour .badge-danger{
+    border-radius: 0 !important;
+    margin-left: 20px ;
+    font-size: 16px !important;
+    background-color: orangered;
+    font-weight: normal;
+}
+.tour .card {
+    border-radius: 0 !important;
+}
+.tour .badge-dark {
+    font-size: 16px !important;
+    background-color: black !important;
+    float: right;
+    font-weight: normal;
+}
+.tour-city, .tour-date, .tour-text, .tour-btn {
+    font-size: 16px !important;
+}
+.tour-btn {
+    background-color: black !important;
+    border-radius: 0 ;
+    border: none;
+}
+
+.contact td {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact .fa {
+    padding-right: 15px ;
+}
+.contact .form-control {
+    border-radius: 0;
+}
+.send-btn .btn{
+    float: right;
+background-color: black !important;   
+color: whitesmoke; 
+border-radius: 0;
+}
+
+.tour-btn:hover, .send-btn .btn:hover{
+    background-color: #ccc !important;
+    color: black !important;
+} 
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    border: 2px solid black !important;
+    border-style: inset;
+    border-radius: 4px;
+    /* outline: none; */
+    box-shadow: none;
+}
+.footer-img img{
+    width: 100%;
+}
+
+.footer .fa {
+    color: rgb(77, 76, 76);
+    font-size: 20px;
+    padding: 3px;
+} 
+
+.footer .fa:hover {
+    color: grey;
+    cursor: pointer;
+} 
