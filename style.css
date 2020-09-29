@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato' sans-serif;
     padding-top: 52px;
+    box-sizing: border-box;
 }
 nav {
     padding-left: 0px !important;
@@ -47,6 +48,7 @@ nav {
 }
 .section-subhead{
     color: grey;
+    font-weight: normal;
 }
 .tour{
     background-color: black;
@@ -79,8 +81,9 @@ nav {
 }
 .tour-btn {
     background-color: black !important;
+    color:white !important;
     border-radius: 0 ;
-    border: none;
+    /* border: none; */
 }
 
 .contact td {
@@ -99,7 +102,25 @@ background-color: black !important;
 color: whitesmoke; 
 border-radius: 0;
 }
+/* .tour-btn:focus {
+    border: 2px solid black;
+    border-color: black; 
+    background-color: #ccc;
+    color: black; 
+    border-radius: 4px;
+    outline: none;
 
+} */
+.send-btn .btn:focus, .tour-btn:focus {
+    border: 2px solid black;
+    background-color: #ccc !important;
+    color: black !important;
+    /* border-style: inset; */
+    /* box-sizing: border-box; */
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+}
 .tour-btn:hover, .send-btn .btn:hover{
     background-color: #ccc !important;
     color: black !important;
@@ -125,3 +146,26 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     color: grey;
     cursor: pointer;
 } 
+
+#w3, .footer div p {
+   color: rgb(77, 76, 76);
+
+}
+#w3{
+   text-decoration: underline;
+
+}
+.tour .modal-header{
+    background-color: rgb(68, 170, 112);
+}
+.tour .modal-title{
+    letter-spacing: 2px ;
+    font-weight: normal;
+    color: white;
+    margin: auto;
+
+
+}
+.tour .modal-title .fa-suitcase{
+    margin-right: 10px;
+}

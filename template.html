@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#carouselExampleSlidesOnly">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Band</a>
+                    <a class="nav-link" href="#band">Band</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tour</a>
+                    <a class="nav-link" href="#tour">Tour</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -86,7 +86,7 @@
 
 
 
-    <div class="container-fluid py-4 band">
+    <div id="band" class="container-fluid py-4 band">
         <div class="row justify-content-center mt-5 mb-3">
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 text-center">
                 <h3 class='section-head'>THE BAND</h3>
@@ -180,7 +180,7 @@
 
 
 
-    <div class="tour container-fluid py-4">
+    <div id='tour' class="tour container-fluid py-4">
 
         <div class="row justify-content-center mt-5 mb-3">
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 text-center">
@@ -213,7 +213,7 @@
                             <h5 class="card-title tour-city">New York</h5>
                             <p class="text-muted tour-date">Fri 27 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <a href="#" class="btn btn-dark tour-btn">Buy Tickets</a>
+                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="card">
@@ -222,7 +222,7 @@
                             <h5 class="card-title tour-city">Paris</h5>
                             <p class="text-muted tour-date ">Sat 28 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <a href="#" class="btn btn-dark tour-btn">Buy Tickets</a>
+                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="card">
@@ -231,12 +231,42 @@
                             <h5 class="card-title tour-city">San Francisco</h5>
                             <p class="text-muted tour-date">Sun 29 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <a href="#" class="btn btn-dark tour-btn">Buy Tickets</a>
+                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="ticketsModal" tabindex="-1" aria-labelledby="ticketsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                        
+                        <h3 class="modal-title" id="ticketsModalLabel"><i class="fa fa-suitcase"></i>Tickets</h3>
+                        <button type="button" class="close" style='color:white' data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="row">
+                        <input type="text" class="form-control">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="row"></div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
     </div>
 
@@ -244,7 +274,7 @@
 
 
 
-    <div class="contact container-fluid py-4">
+    <div id='contact' class="contact container-fluid py-4">
 
         <div class="row justify-content-center mt-5 mb-3">
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 text-center">
@@ -322,7 +352,7 @@
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
         <div class="row justify-content-center mt-3 mb-5">
-            <p>Powered by <a href='#'>w3.css</a></p>
+            <p>Powered by <a id="w3" href='https://www.w3schools.com/w3css/default.asp' target="_blank">w3.css</a></p>
         </div>
     </div>
 
