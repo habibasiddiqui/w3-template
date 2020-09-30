@@ -23,7 +23,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#carouselExampleSlidesOnly">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#carouselExampleSlidesOnly">Home <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#band">Band</a>
@@ -213,7 +214,8 @@
                             <h5 class="card-title tour-city">New York</h5>
                             <p class="text-muted tour-date">Fri 27 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
+                            <button type="button" class="btn tour-btn" data-toggle="modal"
+                                data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="card">
@@ -222,7 +224,8 @@
                             <h5 class="card-title tour-city">Paris</h5>
                             <p class="text-muted tour-date ">Sat 28 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
+                            <button type="button" class="btn tour-btn" data-toggle="modal"
+                                data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="card">
@@ -231,7 +234,8 @@
                             <h5 class="card-title tour-city">San Francisco</h5>
                             <p class="text-muted tour-date">Sun 29 Nov 2016</p>
                             <p class="card-text tour-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                            <button type="button" class="btn tour-btn" data-toggle="modal" data-target="#ticketsModal">Buy Tickets</button>
+                            <button type="button" class="btn tour-btn" data-toggle="modal"
+                                data-target="#ticketsModal">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -241,31 +245,40 @@
         <!-- MODAL -->
         <div class="modal fade" id="ticketsModal" tabindex="-1" aria-labelledby="ticketsModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                        
+                <div class="modal-content">
+                    <div class="modal-header">
+
                         <h3 class="modal-title" id="ticketsModalLabel"><i class="fa fa-suitcase"></i>Tickets</h3>
                         <button type="button" class="close" style='color:white' data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="row">
-                        <input type="text" class="form-control">
-                        <input type="text" class="form-control">
                     </div>
-                    <div class="row"></div>
-
-                  </form>
+                    <div class="modal-body">
+                        <form id='buyTickets'>
+                            <div class="row mx-0">
+                                <label for="ticketsNum"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Tickets,
+                                    $15 per Person</label>
+                            </div>
+                            <div class="row mx-0">
+                                <input type="text" id="ticketsNum" class="form-control" placeholder="How many?">
+                            </div>
+                            <div class="row mx-0 mt-2">
+                                <label for="buyerEmail"><i class="fa fa-user" aria-hidden="true"></i>Send To</label>
+                            </div>
+                            <div class="row mx-0 mb-3">
+                                <input type="text" id="buyerEmail" class="form-control" placeholder="Enter email">
+                            </div>
+                            <div class="row mx-0 mt-2">
+                                <button type='button' class='btn pay-btn btn-block'>PAY<i class="fa fa-check" style='margin-left: 5px;' aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
 
 
     </div>
@@ -309,7 +322,7 @@
                     </div>
 
                     <div class="col-sm-12 col-xs-12 col-md-6">
-                        <form>
+                        <form id='contactUs'>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 mt-2">
                                     <input type="text" class="form-control" required name='name' placeholder="Name">
