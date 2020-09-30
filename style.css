@@ -104,15 +104,33 @@ nav {
 #buyTickets .fa{
     margin-right: 5px;
 }
-
+.close:hover {
+    background-color: #ccc !important;
+    color: black !important;
+}
 .pay-btn{
     background-color: rgb(68, 170, 112);
     border-radius: 0;
     color: white;
 }
-.pay-btn:hover, #buyTickets .close-btn{
+.close-btn {
+    background-color: orangered;
+    color: white;
+    border-radius: 0;
+
+}
+.pay-btn:hover, .close-btn:hover{
     color: black;
     background-color: #ccc;
+}
+#helpLink{
+    text-decoration: underline;
+
+}
+
+#help{
+    float: right;
+    /* vertical-align: middle; */
 }
 
 .contact td {
@@ -127,9 +145,9 @@ nav {
 }
 .send-btn .btn{
     float: right;
-background-color: black !important;   
-color: whitesmoke; 
-border-radius: 0;
+    background-color: black !important;   
+    color: whitesmoke; 
+    border-radius: 0;
 }
 /* .tour-btn:focus {
     border: 2px solid black;
@@ -140,7 +158,7 @@ border-radius: 0;
     outline: none;
 
 } */
-.send-btn .btn:focus, .tour-btn:focus, .pay-btn:focus {
+.send-btn .btn:focus, .tour-btn:focus, .pay-btn:focus, .close-btn:focus {
     border: 2px solid black;
     background-color: #ccc !important;
     color: black !important;
